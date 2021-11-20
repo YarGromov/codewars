@@ -66,8 +66,18 @@
   
 //   return result
 //   }
-//   makeNegative(-5)
-function addFive(num) {
-  var total = num + 5
-  return total
-}
+// //   makeNegative(-5)
+// function addFive(num) {
+//   var total = num + 5
+//   return total
+// }
+function move (position, roll) {
+  let result = 0;
+  
+  result = position + (roll * 2)
+  
+  
+  
+  return result;
+  }
+  move (2, 5)
