@@ -315,17 +315,24 @@
   
   
 //   return result
+// //   }
+// //   solution('Incubator')
+// function sumStr(a,b) {
+//   let result = 0;
+  
+//   result = Number(a) + Number(b)
+  
+  
+  
+  
+  
+//   return result.toString()
 //   }
-//   solution('Incubator')
-function sumStr(a,b) {
-  let result = 0;
-  
-  result = Number(a) + Number(b)
-  
-  
-  
-  
-  
-  return result.toString()
-  }
-  sumStr('2', '3')
+//   sumStr('2', '3')
+function removeChar(str){
+  let result = str.slice(1, -1)
+ 
+ 
+ return result;
+ }
+ removeChar('Petushka')
