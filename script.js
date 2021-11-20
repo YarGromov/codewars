@@ -101,20 +101,31 @@
   
 //   return result;
 //   }
-//   opposite(-3)
-function lovefunc(flower1, flower2){
-  let result;
+// //   opposite(-3)
+// function lovefunc(flower1, flower2){
+//   let result;
   
-  if (flower1 % 2 === 0 && flower2 % 2 !== 0 ) {
-  result = true;
-  } else if (flower2 % 2 === 0 && flower1 % 2 !== 0 ) {
-  result = true;
-  } else {
-  result = false;
-  }
+//   if (flower1 % 2 === 0 && flower2 % 2 !== 0 ) {
+//   result = true;
+//   } else if (flower2 % 2 === 0 && flower1 % 2 !== 0 ) {
+//   result = true;
+//   } else {
+//   result = false;
+//   }
   
+  
+  
+//   return result;
+//   }
+//   lovefunc(3, 3)
+function litres(time) {
+  let result; 
+  
+  let count = time * 0.5;
+  
+  result = Math.floor(count)
   
   
   return result;
   }
-  lovefunc(3, 3)
+  litres(11.8)
