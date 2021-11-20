@@ -42,28 +42,32 @@
 //     return i;
 //   }
 //   doubleInteger(3)
-// function doubleInteger(a, b) {
+// // function doubleInteger(a, b) {
+// //   let result = 0;
+  
+// //   result += a * b
+  
+  
+  
+  
+// //   return result
+// //   }
+// //   doubleInteger(3, 4)
+// function makeNegative(num) {
 //   let result = 0;
   
-//   result += a * b
-  
+//   if (num > 0) {
+//   result = -num
+//   } else {
+//   result = num
+//   }
   
   
   
 //   return result
 //   }
-//   doubleInteger(3, 4)
-function makeNegative(num) {
-  let result = 0;
-  
-  if (num > 0) {
-  result = -num
-  } else {
-  result = num
-  }
-  
-  
-  
-  return result
-  }
-  makeNegative(-5)
+//   makeNegative(-5)
+function addFive(num) {
+  var total = num + 5
+  return total
+}
