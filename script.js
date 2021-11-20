@@ -268,25 +268,40 @@
 //   return result;
 //   }
 //   howMuchILoveYou(460)
-function find_average(array) {
-  let sum = 0;
-let count = 0;
-let result;
+// function find_average(array) {
+//   let sum = 0;
+// let count = 0;
+// let result;
 
 
-for (let i = 0; i < array.length; i++) {
-      sum += array[i]
-      count++
-}
+// for (let i = 0; i < array.length; i++) {
+//       sum += array[i]
+//       count++
+// }
 
 
-if (array.length == 0) {
-result = 0;
-} else if (array.length !== 0) {
-result = sum / count;
-}
+// if (array.length == 0) {
+// result = 0;
+// } else if (array.length !== 0) {
+// result = sum / count;
+// }
 
 
-return result;
-}
-find_average([1, 2, 3, 4])
+// return result;
+// }
+// find_average([1, 2, 3, 4])
+function repeatStr (n, s) {
+  let result = '';
+  
+  let i = 0; 
+  while (i < n) {
+  result += s
+  i++
+  }
+  
+  
+  
+  
+  return result; 
+  }
+  repeatStr(7, "ha ")
