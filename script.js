@@ -118,14 +118,32 @@
 //   return result;
 //   }
 //   lovefunc(3, 3)
-function litres(time) {
-  let result; 
+// function litres(time) {
+//   let result; 
   
-  let count = time * 0.5;
+//   let count = time * 0.5;
   
-  result = Math.floor(count)
+//   result = Math.floor(count)
+  
+  
+//   return result;
+//   }
+//   litres(11.8)
+function rentalCarCost(d) {
+  let result = 0;
+  let price = 40;
+  
+  if (d < 3) {
+  result = d * price;
+  } else if ( d >= 3 && d < 7) {
+  result = (d * price) - 20;
+  } else if ( d >= 7) {
+  result = (d * price) - 50;
+  }
+  
+  
   
   
   return result;
   }
-  litres(11.8)
+  rentalCarCost(7)
