@@ -129,21 +129,28 @@
 //   return result;
 //   }
 //   litres(11.8)
-function rentalCarCost(d) {
-  let result = 0;
-  let price = 40;
+// function rentalCarCost(d) {
+//   let result = 0;
+//   let price = 40;
   
-  if (d < 3) {
-  result = d * price;
-  } else if ( d >= 3 && d < 7) {
-  result = (d * price) - 20;
-  } else if ( d >= 7) {
-  result = (d * price) - 50;
-  }
+//   if (d < 3) {
+//   result = d * price;
+//   } else if ( d >= 3 && d < 7) {
+//   result = (d * price) - 20;
+//   } else if ( d >= 7) {
+//   result = (d * price) - 50;
+//   }
   
   
+  
+  
+//   return result;
+//   }
+//   rentalCarCost(7)
+function square(n) {
+  let result = n ** 2
   
   
   return result;
   }
-  rentalCarCost(7)
+  square(3)
