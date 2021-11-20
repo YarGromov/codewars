@@ -95,10 +95,26 @@
 //   return result;
 //   }
 //   even_or_odd(21)
-function opposite(number) {
-  let result = -number;
+// function opposite(number) {
+//   let result = -number;
+  
+  
+//   return result;
+//   }
+//   opposite(-3)
+function lovefunc(flower1, flower2){
+  let result;
+  
+  if (flower1 % 2 === 0 && flower2 % 2 !== 0 ) {
+  result = true;
+  } else if (flower2 % 2 === 0 && flower1 % 2 !== 0 ) {
+  result = true;
+  } else {
+  result = false;
+  }
+  
   
   
   return result;
   }
-  opposite(-3)
+  lovefunc(3, 3)
