@@ -20,18 +20,25 @@
 // }
 
 // return result
-function isDivisible(n, x, y) {
-  let result = true;
+// function isDivisible(n, x, y) {
+//   let result = true;
   
-  if (Number.isInteger(n / x) && Number.isInteger(n / y)) {
-  result = true;
-  } else {
-  result = false
+//   if (Number.isInteger(n / x) && Number.isInteger(n / y)) {
+//   result = true;
+//   } else {
+//   result = false
+//   }
+  
+  
+  
+  
+//   return result
+//   }
+//   isDivisible(3, 3, 4)
+function doubleInteger(i) {
+  i = i * 2
+  
+  
+    return i;
   }
-  
-  
-  
-  
-  return result
-  }
-  isDivisible(3, 3, 4)
+  doubleInteger(3)
