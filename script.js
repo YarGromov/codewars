@@ -207,18 +207,40 @@
   
 //   return result;
 //   }
-//   isDivideBy(45, 5, 9)
-function hoopCount (n) {
-  let result = '';
+// //   isDivideBy(45, 5, 9)
+// function hoopCount (n) {
+//   let result = '';
   
-  if (n >= 10) {
-  result = 'Great, now move on to tricks';
-  } else {
-  result = 'Keep at it until you get it';
+//   if (n >= 10) {
+//   result = 'Great, now move on to tricks';
+//   } else {
+//   result = 'Keep at it until you get it';
+//   }
+  
+  
+  
+//   return result; 
+//   }
+//   hoopCount(10)
+function findDifference(a, b) {
+  let result = 0;
+  let first = 1;
+  let second = 1;
+  
+  for (let i = 0; i < a.length; i++) {
+  first *= a[i]
   }
   
-  
-  
-  return result; 
+  for (let i = 0; i < b.length; i++) {
+  second *= b[i]
   }
-  hoopCount(10)
+  
+  result = Math.max(first,second) - Math.min(first,second)
+  
+  
+  
+  
+  
+  return result;
+  }
+  findDifference([3, 2, 5], [1, 4, 4])
