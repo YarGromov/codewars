@@ -329,10 +329,25 @@
 //   return result.toString()
 //   }
 //   sumStr('2', '3')
-function removeChar(str){
-  let result = str.slice(1, -1)
+// function removeChar(str){
+//   let result = str.slice(1, -1)
  
  
- return result;
- }
- removeChar('Petushka')
+//  return result;
+//  }
+//  removeChar('Petushka')
+function findSmallestInt(args) {
+  let count = [];
+  
+  
+  
+  for (let i = 0; i < args.length; i++) {
+  count = args.sort(function(a, b) { return a - b; });
+  }
+  
+  
+  
+  
+  return count[0]; 
+  }
+  findSmallestInt([78,56,232,12,8])
