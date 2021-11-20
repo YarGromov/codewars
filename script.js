@@ -191,20 +191,34 @@
   
 //   return result;
 //   };
-//   peopleWithAgeDrink(13)
-function isDivideBy(number, a, b) {
-  let result = true;
+// //   peopleWithAgeDrink(13)
+// function isDivideBy(number, a, b) {
+//   let result = true;
   
-  if (number % a === 0 && number % b === 0) {
-  result = true;
+//   if (number % a === 0 && number % b === 0) {
+//   result = true;
+//   } else {
+//   result = false;
+//   }
+  
+  
+  
+  
+  
+//   return result;
+//   }
+//   isDivideBy(45, 5, 9)
+function hoopCount (n) {
+  let result = '';
+  
+  if (n >= 10) {
+  result = 'Great, now move on to tricks';
   } else {
-  result = false;
+  result = 'Keep at it until you get it';
   }
   
   
   
-  
-  
-  return result;
+  return result; 
   }
-  isDivideBy(45, 5, 9)
+  hoopCount(10)
