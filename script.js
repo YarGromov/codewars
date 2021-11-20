@@ -175,20 +175,36 @@
 //   return result;
 //   }
 //   between(-1, 5)
-function peopleWithAgeDrink(old) {
-  let result = '';
-  if(old < 14) {
-  result = 'drink toddy'
-  } else if(old < 18) {
-  result = 'drink coke'
-  } else if(old < 21) {
-  result = 'drink beer'
-  } else if(old >= 21) {
-  result = 'drink whisky'
-  } 
+// function peopleWithAgeDrink(old) {
+//   let result = '';
+//   if(old < 14) {
+//   result = 'drink toddy'
+//   } else if(old < 18) {
+//   result = 'drink coke'
+//   } else if(old < 21) {
+//   result = 'drink beer'
+//   } else if(old >= 21) {
+//   result = 'drink whisky'
+//   } 
+  
+  
+  
+//   return result;
+//   };
+//   peopleWithAgeDrink(13)
+function isDivideBy(number, a, b) {
+  let result = true;
+  
+  if (number % a === 0 && number % b === 0) {
+  result = true;
+  } else {
+  result = false;
+  }
+  
+  
   
   
   
   return result;
-  };
-  peopleWithAgeDrink(13)
+  }
+  isDivideBy(45, 5, 9)
