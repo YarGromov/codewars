@@ -361,16 +361,36 @@
 //   return result
 //   }
 //   greet('Yaroslav')
-function boolToWord( bool ){
-  let result;
+// function boolToWord( bool ){
+//   let result;
   
-  if (bool == true) {
-  result = 'Yes'
-  } else if (bool == false) {
-  result = 'No'
+//   if (bool == true) {
+//   result = 'Yes'
+//   } else if (bool == false) {
+//   result = 'No'
+//   }
+  
+  
+//   return result;
+//   }
+//    boolToWord(false)
+function abbrevName(name){
+  let result = '';
+  let a = '';
+  let b = '';
+  for (let i = 0; i < name.length; i++) {
+  
+  if (i == 0) {
+  a = name[i].toUpperCase()
   }
   
-  
-  return result;
+  if ( name[i - 1] == ' '){
+  b = name[i].toUpperCase()
   }
-   boolToWord(false)
+  
+  }
+  result = `${a}.${b}`
+      
+  return result
+  }
+  abbrevName("sam harris")
