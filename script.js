@@ -154,10 +154,24 @@
 //   return result;
 //   }
 //   square(3)
-function numberToString(num) {
-  let result = num.toString()
+// function numberToString(num) {
+//   let result = num.toString()
   
   
-  return result
+//   return result
+//   }
+//   numberToString(3)
+function between(a, b) {
+  let result = [];
+  
+  let i = a;
+  while (i <= b) {
+  result.push(i);
+  i++
   }
-  numberToString(3)
+  
+  
+  
+  return result;
+  }
+  between(-1, 5)
