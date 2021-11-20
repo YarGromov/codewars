@@ -334,20 +334,30 @@
  
  
 //  return result;
-//  }
-//  removeChar('Petushka')
-function findSmallestInt(args) {
-  let count = [];
+// //  }
+// //  removeChar('Petushka')
+// function findSmallestInt(args) {
+//   let count = [];
   
   
   
-  for (let i = 0; i < args.length; i++) {
-  count = args.sort(function(a, b) { return a - b; });
+//   for (let i = 0; i < args.length; i++) {
+//   count = args.sort(function(a, b) { return a - b; });
+//   }
+  
+  
+  
+  
+//   return count[0]; 
+//   }
+//   findSmallestInt([78,56,232,12,8])
+function greet(name){
+  let result = '';
+  
+  result = `Hello, ${name} how are you doing today?`;
+  
+  
+  
+  return result
   }
-  
-  
-  
-  
-  return count[0]; 
-  }
-  findSmallestInt([78,56,232,12,8])
+  greet('Yaroslav')
