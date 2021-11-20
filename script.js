@@ -219,28 +219,52 @@
   
   
   
-//   return result; 
+// //   return result; 
+// //   }
+// //   hoopCount(10)
+// function findDifference(a, b) {
+//   let result = 0;
+//   let first = 1;
+//   let second = 1;
+  
+//   for (let i = 0; i < a.length; i++) {
+//   first *= a[i]
 //   }
-//   hoopCount(10)
-function findDifference(a, b) {
-  let result = 0;
-  let first = 1;
-  let second = 1;
   
-  for (let i = 0; i < a.length; i++) {
-  first *= a[i]
+//   for (let i = 0; i < b.length; i++) {
+//   second *= b[i]
+//   }
+  
+//   result = Math.max(first,second) - Math.min(first,second)
+  
+  
+  
+  
+  
+//   return result;
+//   }
+//   findDifference([3, 2, 5], [1, 4, 4])
+function howMuchILoveYou(nbPetals) {
+  let result = '';
+  
+  if (nbPetals === 1 || nbPetals === 7) {
+  result = 'I love you'
+  } else if (nbPetals === 2) {
+  result = 'a little';
+  } else if (nbPetals === 3) {
+  result = 'a lot';
+  } else if (nbPetals === 4) {
+  result = 'passionately';
+  } else if (nbPetals === 5) {
+  result = 'madly';
+  } else if (nbPetals === 6) {
+  result = 'not at all';
+  } else if (nbPetals >= 8) {
+  result = '';
   }
-  
-  for (let i = 0; i < b.length; i++) {
-  second *= b[i]
-  }
-  
-  result = Math.max(first,second) - Math.min(first,second)
-  
-  
   
   
   
   return result;
   }
-  findDifference([3, 2, 5], [1, 4, 4])
+  howMuchILoveYou(460)
