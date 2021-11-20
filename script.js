@@ -350,14 +350,27 @@
   
 //   return count[0]; 
 //   }
-//   findSmallestInt([78,56,232,12,8])
-function greet(name){
-  let result = '';
+// //   findSmallestInt([78,56,232,12,8])
+// function greet(name){
+//   let result = '';
   
-  result = `Hello, ${name} how are you doing today?`;
+//   result = `Hello, ${name} how are you doing today?`;
   
   
   
-  return result
+//   return result
+//   }
+//   greet('Yaroslav')
+function boolToWord( bool ){
+  let result;
+  
+  if (bool == true) {
+  result = 'Yes'
+  } else if (bool == false) {
+  result = 'No'
   }
-  greet('Yaroslav')
+  
+  
+  return result;
+  }
+   boolToWord(false)
