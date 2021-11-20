@@ -161,17 +161,34 @@
 //   return result
 //   }
 //   numberToString(3)
-function between(a, b) {
-  let result = [];
+// function between(a, b) {
+//   let result = [];
   
-  let i = a;
-  while (i <= b) {
-  result.push(i);
-  i++
-  }
+//   let i = a;
+//   while (i <= b) {
+//   result.push(i);
+//   i++
+//   }
+  
+  
+  
+//   return result;
+//   }
+//   between(-1, 5)
+function peopleWithAgeDrink(old) {
+  let result = '';
+  if(old < 14) {
+  result = 'drink toddy'
+  } else if(old < 18) {
+  result = 'drink coke'
+  } else if(old < 21) {
+  result = 'drink beer'
+  } else if(old >= 21) {
+  result = 'drink whisky'
+  } 
   
   
   
   return result;
-  }
-  between(-1, 5)
+  };
+  peopleWithAgeDrink(13)
