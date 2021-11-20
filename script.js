@@ -71,13 +71,27 @@
 //   var total = num + 5
 //   return total
 // }
-function move (position, roll) {
-  let result = 0;
+// function move (position, roll) {
+//   let result = 0;
   
-  result = position + (roll * 2)
+//   result = position + (roll * 2)
+  
+  
+  
+//   return result;
+//   }
+//   move (2, 5)
+function even_or_odd(number) {
+  let result = '';
+  
+  if (number % 2 == 0) {
+  result = 'Even';
+  } else {
+  result = 'Odd'
+  }
   
   
   
   return result;
   }
-  move (2, 5)
+  even_or_odd(21)
