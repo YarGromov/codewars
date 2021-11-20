@@ -10,13 +10,28 @@
   
 //   return result
 //   }
-//   simpleMultiplication(2)
-let result = 0;
+// //   simpleMultiplication(2)
+// let result = 0;
 
-result = laLigaGoals + copaDelReyGoals + championsLeagueGoals
+// result = laLigaGoals + copaDelReyGoals + championsLeagueGoals
 
-if (laLigaGoals + copaDelReyGoals + championsLeagueGoals === undefined) {
-result = 0;
-}
+// if (laLigaGoals + copaDelReyGoals + championsLeagueGoals === undefined) {
+// result = 0;
+// }
 
-return result
+// return result
+function isDivisible(n, x, y) {
+  let result = true;
+  
+  if (Number.isInteger(n / x) && Number.isInteger(n / y)) {
+  result = true;
+  } else {
+  result = false
+  }
+  
+  
+  
+  
+  return result
+  }
+  isDivisible(3, 3, 4)
