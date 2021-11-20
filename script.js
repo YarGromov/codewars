@@ -81,17 +81,24 @@
 //   return result;
 //   }
 //   move (2, 5)
-function even_or_odd(number) {
-  let result = '';
+// function even_or_odd(number) {
+//   let result = '';
   
-  if (number % 2 == 0) {
-  result = 'Even';
-  } else {
-  result = 'Odd'
-  }
+//   if (number % 2 == 0) {
+//   result = 'Even';
+//   } else {
+//   result = 'Odd'
+//   }
   
+  
+  
+//   return result;
+//   }
+//   even_or_odd(21)
+function opposite(number) {
+  let result = -number;
   
   
   return result;
   }
-  even_or_odd(21)
+  opposite(-3)
