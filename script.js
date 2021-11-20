@@ -35,10 +35,21 @@
 //   return result
 //   }
 //   isDivisible(3, 3, 4)
-function doubleInteger(i) {
-  i = i * 2
+// function doubleInteger(i) {
+//   i = i * 2
   
   
-    return i;
+//     return i;
+//   }
+//   doubleInteger(3)
+function doubleInteger(a, b) {
+  let result = 0;
+  
+  result += a * b
+  
+  
+  
+  
+  return result
   }
-  doubleInteger(3)
+  doubleInteger(3, 4)
