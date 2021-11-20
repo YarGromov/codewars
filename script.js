@@ -244,27 +244,49 @@
 //   return result;
 //   }
 //   findDifference([3, 2, 5], [1, 4, 4])
-function howMuchILoveYou(nbPetals) {
-  let result = '';
+// function howMuchILoveYou(nbPetals) {
+//   let result = '';
   
-  if (nbPetals === 1 || nbPetals === 7) {
-  result = 'I love you'
-  } else if (nbPetals === 2) {
-  result = 'a little';
-  } else if (nbPetals === 3) {
-  result = 'a lot';
-  } else if (nbPetals === 4) {
-  result = 'passionately';
-  } else if (nbPetals === 5) {
-  result = 'madly';
-  } else if (nbPetals === 6) {
-  result = 'not at all';
-  } else if (nbPetals >= 8) {
-  result = '';
-  }
+//   if (nbPetals === 1 || nbPetals === 7) {
+//   result = 'I love you'
+//   } else if (nbPetals === 2) {
+//   result = 'a little';
+//   } else if (nbPetals === 3) {
+//   result = 'a lot';
+//   } else if (nbPetals === 4) {
+//   result = 'passionately';
+//   } else if (nbPetals === 5) {
+//   result = 'madly';
+//   } else if (nbPetals === 6) {
+//   result = 'not at all';
+//   } else if (nbPetals >= 8) {
+//   result = '';
+//   }
   
   
   
-  return result;
-  }
-  howMuchILoveYou(460)
+//   return result;
+//   }
+//   howMuchILoveYou(460)
+function find_average(array) {
+  let sum = 0;
+let count = 0;
+let result;
+
+
+for (let i = 0; i < array.length; i++) {
+      sum += array[i]
+      count++
+}
+
+
+if (array.length == 0) {
+result = 0;
+} else if (array.length !== 0) {
+result = sum / count;
+}
+
+
+return result;
+}
+find_average([1, 2, 3, 4])
