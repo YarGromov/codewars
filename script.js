@@ -290,18 +290,30 @@
 // return result;
 // }
 // find_average([1, 2, 3, 4])
-function repeatStr (n, s) {
-  let result = '';
+// function repeatStr (n, s) {
+//   let result = '';
   
-  let i = 0; 
-  while (i < n) {
-  result += s
-  i++
+//   let i = 0; 
+//   while (i < n) {
+//   result += s
+//   i++
+//   }
+  
+  
+  
+  
+//   return result; 
+//   }
+//   repeatStr(7, "ha ")
+function solution(str){
+  let result = "";
+  
+  for (let i = str.length -1; i >= 0 ; i--) {
+  result += str[i]
   }
   
   
   
-  
-  return result; 
+  return result
   }
-  repeatStr(7, "ha ")
+  solution('Incubator')
