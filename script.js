@@ -302,18 +302,30 @@
   
   
   
-//   return result; 
+// //   return result; 
+// //   }
+// //   repeatStr(7, "ha ")
+// function solution(str){
+//   let result = "";
+  
+//   for (let i = str.length -1; i >= 0 ; i--) {
+//   result += str[i]
 //   }
-//   repeatStr(7, "ha ")
-function solution(str){
-  let result = "";
   
-  for (let i = str.length -1; i >= 0 ; i--) {
-  result += str[i]
+  
+  
+//   return result
+//   }
+//   solution('Incubator')
+function sumStr(a,b) {
+  let result = 0;
+  
+  result = Number(a) + Number(b)
+  
+  
+  
+  
+  
+  return result.toString()
   }
-  
-  
-  
-  return result
-  }
-  solution('Incubator')
+  sumStr('2', '3')
