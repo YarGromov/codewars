@@ -146,11 +146,18 @@
   
 //   return result;
 //   }
-//   rentalCarCost(7)
-function square(n) {
-  let result = n ** 2
+// //   rentalCarCost(7)
+// function square(n) {
+//   let result = n ** 2
   
   
-  return result;
+//   return result;
+//   }
+//   square(3)
+function numberToString(num) {
+  let result = num.toString()
+  
+  
+  return result
   }
-  square(3)
+  numberToString(3)
