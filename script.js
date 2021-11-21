@@ -392,24 +392,37 @@
 //   result = `${a}.${b}`
       
 //   return result
+// //   }
+// //   abbrevName("sam harris")
+// function bmi(weight, height) {
+//   let result = '';
+//   let bm = weight / (height ** 2);
+  
+//   if (bm <= 18.5 ) {
+//   result = "Underweight";
+//   } else if ( bm <= 25.0 ) {
+//   result = "Normal";
+//   } else if (bm <= 30.0 ) {
+//   result = "Overweight";
+//   } else if ( bm  > 30) {
+//   result = "Obese";
 //   }
-//   abbrevName("sam harris")
-function bmi(weight, height) {
+  
+  
+  
+//   return result
+//   }
+//   bmi(80, 1.80)
+function updateLight(current) {
   let result = '';
-  let bm = weight / (height ** 2);
   
-  if (bm <= 18.5 ) {
-  result = "Underweight";
-  } else if ( bm <= 25.0 ) {
-  result = "Normal";
-  } else if (bm <= 30.0 ) {
-  result = "Overweight";
-  } else if ( bm  > 30) {
-  result = "Obese";
+  if (current == 'green') {
+  result = 'yellow';
+  } else if (current == 'yellow') {
+  result = 'red'; 
+  } else if (current = 'red') {
+  result = 'green'
   }
-  
-  
-  
-  return result
+  return result;
   }
-  bmi(80, 1.80)
+  updateLight("green")
