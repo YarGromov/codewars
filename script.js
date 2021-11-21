@@ -446,8 +446,13 @@
 //   return result;
 //   }
 //   reverseWords("yoda doesn't speak like this" );
-var laLigaGoals = 43;
-var championsLeagueGoals = 10;
-var copaDelReyGoals = 5;
+// var laLigaGoals = 43;
+// var championsLeagueGoals = 10;
+// var copaDelReyGoals = 5;
 
-var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+// var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+function reverseList(list) {
+  let result = list.reverse();
+  return result
+  }
+  reverseList([1,2,3,4]);
