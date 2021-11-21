@@ -374,23 +374,42 @@
 //   return result;
 //   }
 //    boolToWord(false)
-function abbrevName(name){
-  let result = '';
-  let a = '';
-  let b = '';
-  for (let i = 0; i < name.length; i++) {
+// function abbrevName(name){
+//   let result = '';
+//   let a = '';
+//   let b = '';
+//   for (let i = 0; i < name.length; i++) {
   
-  if (i == 0) {
-  a = name[i].toUpperCase()
-  }
+//   if (i == 0) {
+//   a = name[i].toUpperCase()
+//   }
   
-  if ( name[i - 1] == ' '){
-  b = name[i].toUpperCase()
-  }
+//   if ( name[i - 1] == ' '){
+//   b = name[i].toUpperCase()
+//   }
   
-  }
-  result = `${a}.${b}`
+//   }
+//   result = `${a}.${b}`
       
+//   return result
+//   }
+//   abbrevName("sam harris")
+function bmi(weight, height) {
+  let result = '';
+  let bm = weight / (height ** 2);
+  
+  if (bm <= 18.5 ) {
+  result = "Underweight";
+  } else if ( bm <= 25.0 ) {
+  result = "Normal";
+  } else if (bm <= 30.0 ) {
+  result = "Overweight";
+  } else if ( bm  > 30) {
+  result = "Obese";
+  }
+  
+  
+  
   return result
   }
-  abbrevName("sam harris")
+  bmi(80, 1.80)
