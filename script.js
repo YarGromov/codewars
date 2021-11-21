@@ -456,21 +456,35 @@
 //   return result
 //   }
 //   reverseList([1,2,3,4]);
-var min = function(list){
+// var min = function(list){
 
-  let arr = list.sort( (a, b) => a - b );
+//   let arr = list.sort( (a, b) => a - b );
   
   
-  let result = 0;
-  return arr[0];
-  }
-  min([-52, 56, 30, 29, -54, 0, -110]);
+//   let result = 0;
+//   return arr[0];
+//   }
+//   min([-52, 56, 30, 29, -54, 0, -110]);
   
   
-  var max = function(list){
+//   var max = function(list){
   
-      let res = list.sort( (a, b) => a - b );
+//       let res = list.sort( (a, b) => a - b );
   
-      return res[res.length -1];
-  }
-  max([4,6,2,1,9,63,-134,566])
+//       return res[res.length -1];
+//   }
+//   max([4,6,2,1,9,63,-134,566])
+function removeExclamationMarks(s) {
+  let result = '';
+
+for (let i = 0; i < s.length; i++) {
+
+if (s[i] == '!') {
+continue;
+} else if (s[i] !== '!') {
+result += s[i]
+}
+}
+return result;
+}
+removeExclamationMarks("Hello World!!!!!!")
