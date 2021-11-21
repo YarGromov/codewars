@@ -451,8 +451,26 @@
 // var copaDelReyGoals = 5;
 
 // var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
-function reverseList(list) {
-  let result = list.reverse();
-  return result
+// function reverseList(list) {
+//   let result = list.reverse();
+//   return result
+//   }
+//   reverseList([1,2,3,4]);
+var min = function(list){
+
+  let arr = list.sort( (a, b) => a - b );
+  
+  
+  let result = 0;
+  return arr[0];
   }
-  reverseList([1,2,3,4]);
+  min([-52, 56, 30, 29, -54, 0, -110]);
+  
+  
+  var max = function(list){
+  
+      let res = list.sort( (a, b) => a - b );
+  
+      return res[res.length -1];
+  }
+  max([4,6,2,1,9,63,-134,566])
