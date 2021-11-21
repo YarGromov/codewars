@@ -424,18 +424,25 @@
 //   result = 'green'
 //   }
 //   return result;
+// //   }
+// //   updateLight("green")
+// const reverseSeq = n => {
+//   let result = [];
+  
+//   for (let i = n; i > 0; i--) {
+//   result.push(i)
 //   }
-//   updateLight("green")
-const reverseSeq = n => {
-  let result = [];
-  
-  for (let i = n; i > 0; i--) {
-  result.push(i)
-  }
   
   
   
   
+//   return result;
+//   };
+//   reverseSeq(5);
+function reverseWords(str){
+
+
+  let result = str.split(' ').reverse().join(' ');
   return result;
-  };
-  reverseSeq(5);
+  }
+  reverseWords("yoda doesn't speak like this" );
