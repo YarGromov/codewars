@@ -411,18 +411,31 @@
   
   
 //   return result
-//   }
-//   bmi(80, 1.80)
-function updateLight(current) {
-  let result = '';
+// //   }
+// //   bmi(80, 1.80)
+// function updateLight(current) {
+//   let result = '';
   
-  if (current == 'green') {
-  result = 'yellow';
-  } else if (current == 'yellow') {
-  result = 'red'; 
-  } else if (current = 'red') {
-  result = 'green'
+//   if (current == 'green') {
+//   result = 'yellow';
+//   } else if (current == 'yellow') {
+//   result = 'red'; 
+//   } else if (current = 'red') {
+//   result = 'green'
+//   }
+//   return result;
+//   }
+//   updateLight("green")
+const reverseSeq = n => {
+  let result = [];
+  
+  for (let i = n; i > 0; i--) {
+  result.push(i)
   }
+  
+  
+  
+  
   return result;
-  }
-  updateLight("green")
+  };
+  reverseSeq(5);
