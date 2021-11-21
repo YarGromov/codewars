@@ -439,10 +439,15 @@
 //   return result;
 //   };
 //   reverseSeq(5);
-function reverseWords(str){
+// function reverseWords(str){
 
 
-  let result = str.split(' ').reverse().join(' ');
-  return result;
-  }
-  reverseWords("yoda doesn't speak like this" );
+//   let result = str.split(' ').reverse().join(' ');
+//   return result;
+//   }
+//   reverseWords("yoda doesn't speak like this" );
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
