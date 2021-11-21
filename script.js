@@ -474,17 +474,34 @@
 //       return res[res.length -1];
 //   }
 //   max([4,6,2,1,9,63,-134,566])
-function removeExclamationMarks(s) {
-  let result = '';
+// function removeExclamationMarks(s) {
+//   let result = '';
 
-for (let i = 0; i < s.length; i++) {
+// for (let i = 0; i < s.length; i++) {
 
-if (s[i] == '!') {
-continue;
-} else if (s[i] !== '!') {
-result += s[i]
-}
-}
-return result;
-}
-removeExclamationMarks("Hello World!!!!!!")
+// if (s[i] == '!') {
+// continue;
+// } else if (s[i] !== '!') {
+// result += s[i]
+// }
+// }
+// return result;
+// }
+// removeExclamationMarks("Hello World!!!!!!")
+function basicOp(operation, value1, value2) {
+  let result = 0;
+  if (operation == '*') {
+  result = value1 * value2
+  } else if (operation == '+' ) {
+  result = value1 + value2
+  } else if (operation == '-' ) {
+  result = value1 - value2
+  } else if (operation == '/' ) {
+  result = value1 / value2
+  }
+  
+  
+  
+  return result;
+  }
+  basicOp('/', 7, 5)
