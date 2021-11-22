@@ -545,22 +545,31 @@
 //   return result; 
 //   }
 //   multiTable(2)
-function defineSuit(card) {
+// function defineSuit(card) {
+//   let result = '';
+  
+  
+  
+//   if ((card[card.length-1]) == '♣') {
+//   result += 'clubs';
+//   } else if ((card[card.length-1]) == '♦') {
+//   result += 'diamonds';
+//   } else if ((card[card.length-1]) == '♥') {
+//   result += 'hearts';
+//   } else if ((card[card.length-1]) == '♠') {
+//   result += 'spades';
+//   }
+  
+//   return result;
+//   }
+//   defineSuit("7♠")
+function sayHello(name) {
   let result = '';
   
+  result = 'Hello, ' + name
   
   
-  if ((card[card.length-1]) == '♣') {
-  result += 'clubs';
-  } else if ((card[card.length-1]) == '♦') {
-  result += 'diamonds';
-  } else if ((card[card.length-1]) == '♥') {
-  result += 'hearts';
-  } else if ((card[card.length-1]) == '♠') {
-  result += 'spades';
+  
+  return result; 
   }
-  
-  return result;
-  }
-  defineSuit("7♠")
-  
+  sayHello('Liutenant Uhura')
