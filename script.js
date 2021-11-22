@@ -503,5 +503,4 @@ function basicOp(operation, value1, value2) {
   
   
   return result;
-  }
-  basicOp('/', 7, 5)
+  
