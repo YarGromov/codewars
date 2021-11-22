@@ -483,38 +483,46 @@
 // continue;
 // } else if (s[i] !== '!') {
 // // result += s[i]
-// // }
-// // }
-// // return result;
-// // }
-// // removeExclamationMarks("Hello World!!!!!!")
-// function basicOp(operation, value1, value2) {
-//   let result = 0;
-//   if (operation == '*') {
-//   result = value1 * value2
-//   } else if (operation == '+' ) {
-//   result = value1 + value2
-//   } else if (operation == '-' ) {
-//   result = value1 - value2
-//   } else if (operation == '/' ) {
-//   result = value1 / value2
+// // // }
+// // // }
+// // // return result;
+// // // }
+// // // removeExclamationMarks("Hello World!!!!!!")
+// // function basicOp(operation, value1, value2) {
+// //   let result = 0;
+// //   if (operation == '*') {
+// //   result = value1 * value2
+// //   } else if (operation == '+' ) {
+// //   result = value1 + value2
+// //   } else if (operation == '-' ) {
+// //   result = value1 - value2
+// //   } else if (operation == '/' ) {
+// //   result = value1 / value2
+// //   }
+  
+  
+  
+// //   return result;
+  
+// function areYouPlayingBanjo(name) {
+//   let result = '';
+//   if (name[0] === 'R' || name[0] === 'r') {
+//   result = `${name} plays banjo`
+//   } else {
+//   result = `${name} does not play banjo`
 //   }
   
   
   
-//   return result;
   
-function areYouPlayingBanjo(name) {
-  let result = '';
-  if (name[0] === 'R' || name[0] === 'r') {
-  result = `${name} plays banjo`
-  } else {
-  result = `${name} does not play banjo`
-  }
-  
-  
-  
-  
-    return result;
-  }
-  areYouPlayingBanjo("aul")
+//     return result;
+//   }
+//   areYouPlayingBanjo("aul")
+
+var websites = []
+
+for (let i = 0; i < 1000; i++) {
+websites.push("codewars");
+}
+
+console.log(websites)
