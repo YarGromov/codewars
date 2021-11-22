@@ -517,12 +517,31 @@
   
 //     return result;
 //   }
-//   areYouPlayingBanjo("aul")
+// //   areYouPlayingBanjo("aul")
 
-var websites = []
+// var websites = []
 
-for (let i = 0; i < 1000; i++) {
-websites.push("codewars");
-}
+// for (let i = 0; i < 1000; i++) {
+// websites.push("codewars");
+// }
 
-console.log(websites)
+// console.log(websites)
+function multiTable(number) {
+  let count = 0;
+  let result = '';
+  
+  for (let i = 1; i < 10; i++) {
+  result += `${i} * ${number} = ${i * number}\n`;
+  count++
+  }
+  
+  if (count == 9) {
+  result += `${10} * ${number} = ${10 * number}`
+  }
+  
+  
+  
+  
+  return result; 
+  }
+  multiTable(2)
