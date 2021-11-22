@@ -525,23 +525,42 @@
 // websites.push("codewars");
 // }
 
-// console.log(websites)
-function multiTable(number) {
-  let count = 0;
+// // console.log(websites)
+// function multiTable(number) {
+//   let count = 0;
+//   let result = '';
+  
+//   for (let i = 1; i < 10; i++) {
+//   result += `${i} * ${number} = ${i * number}\n`;
+//   count++
+//   }
+  
+//   if (count == 9) {
+//   result += `${10} * ${number} = ${10 * number}`
+//   }
+  
+  
+  
+  
+//   return result; 
+//   }
+//   multiTable(2)
+function defineSuit(card) {
   let result = '';
   
-  for (let i = 1; i < 10; i++) {
-  result += `${i} * ${number} = ${i * number}\n`;
-  count++
+  
+  
+  if ((card[card.length-1]) == '♣') {
+  result += 'clubs';
+  } else if ((card[card.length-1]) == '♦') {
+  result += 'diamonds';
+  } else if ((card[card.length-1]) == '♥') {
+  result += 'hearts';
+  } else if ((card[card.length-1]) == '♠') {
+  result += 'spades';
   }
   
-  if (count == 9) {
-  result += `${10} * ${number} = ${10 * number}`
+  return result;
   }
+  defineSuit("7♠")
   
-  
-  
-  
-  return result; 
-  }
-  multiTable(2)
