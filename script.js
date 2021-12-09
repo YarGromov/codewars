@@ -573,16 +573,31 @@
 //   return result; 
 //   }
 //   sayHello('Liutenant Uhura')
-function distinct(a) {
-  let result = [];
+// function distinct(a) {
+//   let result = [];
   
-    result = a.filter(function(item, pos) {
-      return a.indexOf(item) == pos;
-  })
-  
-  
+//     result = a.filter(function(item, pos) {
+//       return a.indexOf(item) == pos;
+//   })
   
   
-  return result
+  
+  
+//   return result
+//   }
+//   distinct([1,1,2,2,2,3,4,3,5, 4, 4, 5, 6, 5, 7])
+function billboard(name, price = 30){
+  let result = 0;
+  let count = 0;
+
+  for (let i = 0; i < name.length; i++) {
+    count++
   }
-  distinct([1,1,2,2,2,3,4,3,5, 4, 4, 5, 6, 5, 7])
+ for (let j = 0; j < count; j++) {
+    result += price
+  }
+
+
+  return result;
+} 
+billboard("Simon Eadwulfk")
