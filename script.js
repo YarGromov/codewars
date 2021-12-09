@@ -563,13 +563,26 @@
 //   return result;
 //   }
 //   defineSuit("7♠")
-function sayHello(name) {
-  let result = '';
+// function sayHello(name) {
+//   let result = '';
   
-  result = 'Hello, ' + name
+//   result = 'Hello, ' + name
   
   
   
-  return result; 
+//   return result; 
+//   }
+//   sayHello('Liutenant Uhura')
+function distinct(a) {
+  let result = [];
+  
+    result = a.filter(function(item, pos) {
+      return a.indexOf(item) == pos;
+  })
+  
+  
+  
+  
+  return result
   }
-  sayHello('Liutenant Uhura')
+  distinct([1,1,2,2,2,3,4,3,5, 4, 4, 5, 6, 5, 7])
