@@ -585,19 +585,33 @@
   
 //   return result
 //   }
-//   distinct([1,1,2,2,2,3,4,3,5, 4, 4, 5, 6, 5, 7])
-function billboard(name, price = 30){
-  let result = 0;
-  let count = 0;
+// //   distinct([1,1,2,2,2,3,4,3,5, 4, 4, 5, 6, 5, 7])
+// function billboard(name, price = 30){
+//   let result = 0;
+//   let count = 0;
 
-  for (let i = 0; i < name.length; i++) {
-    count++
+//   for (let i = 0; i < name.length; i++) {
+//     count++
+//   }
+//  for (let j = 0; j < count; j++) {
+//     result += price
+//   }
+
+
+//   return result;
+// } 
+// billboard("Simon Eadwulfk")
+function strCount(str, letter){  
+  let result = 0; 
+  
+    for (let i = 0; i < str.length; i++) {
+      if (letter == str[i]) {
+        result++
+      }
+    }
+  
+  
+  
+    return result
   }
- for (let j = 0; j < count; j++) {
-    result += price
-  }
-
-
-  return result;
-} 
-billboard("Simon Eadwulfk")
+  strCount('Hello', 'o')
