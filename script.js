@@ -643,16 +643,24 @@
 //   return (str.toUpperCase())
 // }
 // makeUpperCase("hello")
-function findMultiples(integer, limit) {
-  let result = [];
+// function findMultiples(integer, limit) {
+//   let result = [];
   
-    for (let i = integer; i < limit; i++) {
-      if (i % integer == 0) {
-        result.push(i)
-      }
-    }
+//     for (let i = integer; i < limit; i++) {
+//       if (i % integer == 0) {
+//         result.push(i)
+//       }
+//     }
   
   
-    return result;
-  }
-  findMultiples(4, 27)
+//     return result;
+//   }
+//   findMultiples(4, 27)
+function ensureQuestion(s) {
+  if (s[s.length -1] !== '?') {
+    return `${s}?`
+  } else if (s[s.length -1] == '?') {
+    return s
+  } else return s
+}
+ensureQuestion("")
