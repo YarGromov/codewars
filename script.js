@@ -598,20 +598,44 @@
 //   }
 
 
-//   return result;
-// } 
-// billboard("Simon Eadwulfk")
-function strCount(str, letter){  
-  let result = 0; 
+// //   return result;
+// // } 
+// // billboard("Simon Eadwulfk")
+// function strCount(str, letter){  
+//   let result = 0; 
   
-    for (let i = 0; i < str.length; i++) {
-      if (letter == str[i]) {
-        result++
-      }
+//     for (let i = 0; i < str.length; i++) {
+//       if (letter == str[i]) {
+//         result++
+//       }
+//     }
+  
+  
+  
+//     return result
+//   }
+//   strCount('Hello', 'o')
+function solution(a, b){
+  let result = '';
+  let countA = 0;
+  let countB = 0; 
+    
+  
+    for (let i = 0; i < a.length; i++) {
+      countA++
     }
-  
-  
-  
-    return result
+  for (let j = 0; j < b.length; j++) {
+    countB++
   }
-  strCount('Hello', 'o')
+    if (countA > countB) {
+      result = `${b}${a}${b}`;
+    } else if (countA < countB) {
+      result = `${a}${b}${a}`;
+    } 
+    
+  
+  
+  
+  return result;
+  }
+  solution('Soon', 'Meeee')
