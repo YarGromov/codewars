@@ -639,7 +639,20 @@
 //   return result;
 //   }
 //   solution('Soon', 'Meeee')
-function makeUpperCase(str) {
-  return (str.toUpperCase())
-}
-makeUpperCase("hello")
+// function makeUpperCase(str) {
+//   return (str.toUpperCase())
+// }
+// makeUpperCase("hello")
+function findMultiples(integer, limit) {
+  let result = [];
+  
+    for (let i = integer; i < limit; i++) {
+      if (i % integer == 0) {
+        result.push(i)
+      }
+    }
+  
+  
+    return result;
+  }
+  findMultiples(4, 27)
