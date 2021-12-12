@@ -664,7 +664,22 @@
 //   } else return s
 // }
 // ensureQuestion("")
-function main (verb, noun) {
-  return verb + noun
-}
-main('take ', 'item')
+// function main (verb, noun) {
+//   return verb + noun
+// }
+// main('take ', 'item')
+function feast(beast, dish) {
+  let result;
+    if (beast[0] === dish[0] && beast[beast.length -1] === dish[dish.length -1]) {
+      result = true;
+    } else {
+      result = false
+    }
+  
+  
+  
+  
+  
+    return result;
+  }
+  feast("great blue hero", "garlic naan")
