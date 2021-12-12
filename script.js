@@ -615,27 +615,31 @@
 //     return result
 //   }
 //   strCount('Hello', 'o')
-function solution(a, b){
-  let result = '';
-  let countA = 0;
-  let countB = 0; 
+// function solution(a, b){
+//   let result = '';
+//   let countA = 0;
+//   let countB = 0; 
     
   
-    for (let i = 0; i < a.length; i++) {
-      countA++
-    }
-  for (let j = 0; j < b.length; j++) {
-    countB++
-  }
-    if (countA > countB) {
-      result = `${b}${a}${b}`;
-    } else if (countA < countB) {
-      result = `${a}${b}${a}`;
-    } 
+//     for (let i = 0; i < a.length; i++) {
+//       countA++
+//     }
+//   for (let j = 0; j < b.length; j++) {
+//     countB++
+//   }
+//     if (countA > countB) {
+//       result = `${b}${a}${b}`;
+//     } else if (countA < countB) {
+//       result = `${a}${b}${a}`;
+//     } 
     
   
   
   
-  return result;
-  }
-  solution('Soon', 'Meeee')
+//   return result;
+//   }
+//   solution('Soon', 'Meeee')
+function makeUpperCase(str) {
+  return (str.toUpperCase())
+}
+makeUpperCase("hello")
