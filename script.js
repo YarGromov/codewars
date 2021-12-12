@@ -656,11 +656,22 @@
 //     return result;
 //   }
 //   findMultiples(4, 27)
-function ensureQuestion(s) {
-  if (s[s.length -1] !== '?') {
-    return `${s}?`
-  } else if (s[s.length -1] == '?') {
-    return s
-  } else return s
+// function ensureQuestion(s) {
+//   if (s[s.length -1] !== '?') {
+//     return `${s}?`
+//   } else if (s[s.length -1] == '?') {
+//     return s
+//   } else return s
+// }
+// ensureQuestion("")
+function greet(name){
+  
+  if(name === "Johnny") {
+    return "Hello, my love!";
+  } else {
+      return "Hello, " + name + "!";
+  }
+    
+
 }
-ensureQuestion("")
+greet("Johnny")
