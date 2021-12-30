@@ -587,17 +587,35 @@
 //     return result;
 //   }
 //   feast("great blue hero", "garlic naan")
-function hero(bullets, dragons){
-  let result;
+// function hero(bullets, dragons){
+//   let result;
     
-  if ((bullets / dragons) >= 2) {
-    result = true;
-  } else {
-    result = false
+//   if ((bullets / dragons) >= 2) {
+//     result = true;
+//   } else {
+//     result = false
+//   }
+  
+  
+  
+//   return result 
+//   }
+//   hero(1500, 749)
+function shortcut(string){
+  let result = '';
+    
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] ==  'a' || string[i] ==  'e' || string[i] ==  'i' || string[i] ==  'o' || string[i] ==  'u' || string[i] ==  'y') {
+      continue
+    } else  {
+      result += string[i]
+    }
+    
   }
-  
-  
-  
-  return result 
+    
+   
+  return result + ', shortcut did not work properly';
   }
-  hero(1500, 749)
+  shortcut('Lol is a capital of Great BritainA')
+   // 'a', 'e', 'i', 'o', 'u', 'y'
+   // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
