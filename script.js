@@ -615,22 +615,34 @@
 //   }
 //   shortcut('Lol is a capital of Great BritainA')
 //    // 'a', 'e', 'i', 'o', 'u', 'y'
-//    // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
+// //    // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
+// function sixToast(num) {
+//   let result = 0;
+  
+  
+//     for (let i = 0; i < num; i++) {
+//       if (num > 6) {
+//         result = num - 6
+//       } else if (num < 6) {
+//         result = 6 - num
+//       } else {
+//         result = 0
+//       }
+//     }
+  
+  
+//     return result;
+//   }
+//   sixToast(1)
 function sixToast(num) {
-  let result = 0;
-  
-  
-    for (let i = 0; i < num; i++) {
+  for (let i = 0; i < num; i++) {
       if (num > 6) {
-        result = num - 6
+        return (num - 6)
       } else if (num < 6) {
-        result = 6 - num
+        return (6 - num)
       } else {
-        result = 0
+        return  0
       }
     }
-  
-  
-    return result;
   }
-  sixToast(1)
+  sixToast(6)
