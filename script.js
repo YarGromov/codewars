@@ -646,11 +646,24 @@
 //     }
 //   }
 //   sixToast(6)
-function checkForFactor (base, factor) {
-  if (base % 2 === 0) {
-     return true
-   } else {
-     return false
-   }
- }
- checkForFactor(653,7)
+// function checkForFactor (base, factor) {
+//   if (base % 2 === 0) {
+//      return true
+//    } else {
+//      return false
+//    }
+//  }
+//  checkForFactor(653,7)
+const quarterOf = (month) => {
+
+  if (month <= 3) {
+    return 1
+  } else if (month > 3 && month <= 6) {
+    return 2
+  } else if (month > 6 && month <= 9) {
+    return 3
+  } else if (month > 9 && month <= 12) {
+    return 4
+  } 
+};
+quarterOf(13)
