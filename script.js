@@ -589,33 +589,48 @@
 //   feast("great blue hero", "garlic naan")
 // function hero(bullets, dragons){
 //   let result;
-    
+
 //   if ((bullets / dragons) >= 2) {
 //     result = true;
 //   } else {
 //     result = false
 //   }
-  
-  
-  
-//   return result 
+
+//   return result
 //   }
 //   hero(1500, 749)
-function shortcut(string){
-  let result = '';
-    
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] ==  'a' || string[i] ==  'e' || string[i] ==  'i' || string[i] ==  'o' || string[i] ==  'u' || string[i] ==  'y') {
-      continue
-    } else  {
-      result += string[i]
+// function shortcut(string){
+//   let result = '';
+
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] ==  'a' || string[i] ==  'e' || string[i] ==  'i' || string[i] ==  'o' || string[i] ==  'u' || string[i] ==  'y') {
+//       continue
+//     } else  {
+//       result += string[i]
+//     }
+
+//   }
+
+//   return result + ', shortcut did not work properly';
+//   }
+//   shortcut('Lol is a capital of Great BritainA')
+//    // 'a', 'e', 'i', 'o', 'u', 'y'
+//    // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
+function sixToast(num) {
+  let result = 0;
+  
+  
+    for (let i = 0; i < num; i++) {
+      if (num > 6) {
+        result = num - 6
+      } else if (num < 6) {
+        result = 6 - num
+      } else {
+        result = 0
+      }
     }
-    
+  
+  
+    return result;
   }
-    
-   
-  return result + ', shortcut did not work properly';
-  }
-  shortcut('Lol is a capital of Great BritainA')
-   // 'a', 'e', 'i', 'o', 'u', 'y'
-   // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
+  sixToast(1)
