@@ -634,15 +634,23 @@
 //     return result;
 //   }
 //   sixToast(1)
-function sixToast(num) {
-  for (let i = 0; i < num; i++) {
-      if (num > 6) {
-        return (num - 6)
-      } else if (num < 6) {
-        return (6 - num)
-      } else {
-        return  0
-      }
-    }
-  }
-  sixToast(6)
+// function sixToast(num) {
+//   for (let i = 0; i < num; i++) {
+//       if (num > 6) {
+//         return (num - 6)
+//       } else if (num < 6) {
+//         return (6 - num)
+//       } else {
+//         return  0
+//       }
+//     }
+//   }
+//   sixToast(6)
+function checkForFactor (base, factor) {
+  if (base % 2 === 0) {
+     return true
+   } else {
+     return false
+   }
+ }
+ checkForFactor(653,7)
