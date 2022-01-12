@@ -618,8 +618,7 @@
 // //    // 'a' ||'e'|| 'i'|| 'o'|| 'u'|| 'y'
 // function sixToast(num) {
 //   let result = 0;
-  
-  
+
 //     for (let i = 0; i < num; i++) {
 //       if (num > 6) {
 //         result = num - 6
@@ -629,8 +628,7 @@
 //         result = 0
 //       }
 //     }
-  
-  
+
 //     return result;
 //   }
 //   sixToast(1)
@@ -654,16 +652,45 @@
 //    }
 //  }
 //  checkForFactor(653,7)
-const quarterOf = (month) => {
+// const quarterOf = (month) => {
 
-  if (month <= 3) {
-    return 1
-  } else if (month > 3 && month <= 6) {
-    return 2
-  } else if (month > 6 && month <= 9) {
-    return 3
-  } else if (month > 9 && month <= 12) {
-    return 4
-  } 
-};
-quarterOf(13)
+//   if (month <= 3) {
+//     return 1
+//   } else if (month > 3 && month <= 6) {
+//     return 2
+//   } else if (month > 6 && month <= 9) {
+//     return 3
+//   } else if (month > 9 && month <= 12) {
+//     return 4
+//   }
+// };
+// quarterOf(13)
+// function pyramid(balls) {
+//   let count = [];
+
+//   for (let i = 0; i <= balls; i++) {
+//     if (i % 2 != 0) {
+//       count.push(i);
+//     }
+//   }
+
+//   let count2 = 0;
+
+//   let count1 = count.reduce(function (acc, elem) {
+//     return acc + elem;
+//   });
+
+//   return count;
+// }
+// pyramid(7);
+function first(arr, n) {
+  n = typeof n !== 'undefined' ?  n : 1;
+  if (arr.length > 1 ) {
+   return(arr.slice(0, n))
+} else if (arr.length == 1) {
+  return (arr.slice(0, 1))
+} else if (arr.length == 0) {
+  return arr
+}  
+}
+first(['a', '2', 'c', 'd', 'e'])
