@@ -694,26 +694,37 @@
 // }  
 // }
 // first(['a', '2', 'c', 'd', 'e'])
-function mergeArrays(arr1, arr2) {
+// function mergeArrays(arr1, arr2) {
 
-  let arr = arr1.slice();
-  let arr3 = [];
+//   let arr = arr1.slice();
+//   let arr3 = [];
   
-  for (let i = 0; i < arr2.length; i++) {
-    arr.push(arr2[i])
-  }
-  let sorti = (a, b) => a -b;
-  arr.sort(sorti)
+//   for (let i = 0; i < arr2.length; i++) {
+//     arr.push(arr2[i])
+//   }
+//   let sorti = (a, b) => a -b;
+//   arr.sort(sorti)
   
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== arr[i + 1]) {
-      arr3.push(arr[i])
-    }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== arr[i + 1]) {
+//       arr3.push(arr[i])
+//     }
+//   }
   
     
     
-  return arr3
+//   return arr3
   
-  }
-  mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12])
+//   }
+//   mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12])
+function sum (numbers) {
+  "use strict";
+let result = 0;
+numbers.forEach(item => {
+result += item
+})
+
+return result;
+};
+sum([1, 5.2, 4, 0, -1])
+
