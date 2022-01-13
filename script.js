@@ -683,14 +683,37 @@
 //   return count;
 // }
 // pyramid(7);
-function first(arr, n) {
-  n = typeof n !== 'undefined' ?  n : 1;
-  if (arr.length > 1 ) {
-   return(arr.slice(0, n))
-} else if (arr.length == 1) {
-  return (arr.slice(0, 1))
-} else if (arr.length == 0) {
-  return arr
-}  
-}
-first(['a', '2', 'c', 'd', 'e'])
+// function first(arr, n) {
+//   n = typeof n !== 'undefined' ?  n : 1;
+//   if (arr.length > 1 ) {
+//    return(arr.slice(0, n))
+// } else if (arr.length == 1) {
+//   return (arr.slice(0, 1))
+// } else if (arr.length == 0) {
+//   return arr
+// }  
+// }
+// first(['a', '2', 'c', 'd', 'e'])
+function mergeArrays(arr1, arr2) {
+
+  let arr = arr1.slice();
+  let arr3 = [];
+  
+  for (let i = 0; i < arr2.length; i++) {
+    arr.push(arr2[i])
+  }
+  let sorti = (a, b) => a -b;
+  arr.sort(sorti)
+  
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== arr[i + 1]) {
+      arr3.push(arr[i])
+    }
+  }
+  
+    
+    
+  return arr3
+  
+  }
+  mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12])
