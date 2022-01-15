@@ -717,14 +717,22 @@
   
 //   }
 //   mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12])
-function sum (numbers) {
-  "use strict";
-let result = 0;
-numbers.forEach(item => {
-result += item
-})
+// function sum (numbers) {
+//   "use strict";
+// let result = 0;
+// numbers.forEach(item => {
+// result += item
+// })
 
-return result;
-};
-sum([1, 5.2, 4, 0, -1])
-
+// return result;
+// };
+// sum([1, 5.2, 4, 0, -1])
+function removeNthElement(arr, n) {
+  let newArr = [];
+  arr.forEach(function(i) {
+    newArr.push(i)
+  })
+  newArr.splice(n, 1)
+  return newArr;
+}
+removeNthElement([1, 2, 3, 4, 5], 3)
