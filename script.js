@@ -742,8 +742,29 @@
 //    return arr1;
 //  }
 //  withoutLast([1, 2, 3, 4, 5])
-function getChar(c){
-  return (String.fromCodePoint(c))
+// function getChar(c){
+//   return (String.fromCodePoint(c))
+//   }
+//   getChar(56)
+function getGrade (s1, s2, s3) {
+  let result = "";
+  let score = ((s1 + s2 + s3) / 3);
+    
+    if (90 <= score && score <= 100 ) {
+      result = 	"A";
+    } else if (80 <= score && score  < 90) {
+      result = "B";
+    } else if (70 <= score && score < 80) {
+      result = "C";
+    } else if (60 <= score && score < 70) {
+      result = "D";
+    } else if (0 <= score && score < 60) {
+      result = "F";
+    }
+    
+  
+  
+    return result;
   }
-  getChar(56)
+  getGrade(80,90,100)
 
