@@ -736,10 +736,14 @@
 //   return newArr;
 // }
 // removeNthElement([1, 2, 3, 4, 5], 3)
-function withoutLast(arr) {
-  let arr1 = [];
-   arr1 = arr.slice(0, -1); 
-   return arr1;
- }
- withoutLast([1, 2, 3, 4, 5])
- 
+// function withoutLast(arr) {
+//   let arr1 = [];
+//    arr1 = arr.slice(0, -1); 
+//    return arr1;
+//  }
+//  withoutLast([1, 2, 3, 4, 5])
+function getChar(c){
+  return (String.fromCodePoint(c))
+  }
+  getChar(56)
+
