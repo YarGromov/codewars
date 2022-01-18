@@ -727,12 +727,19 @@
 // return result;
 // };
 // sum([1, 5.2, 4, 0, -1])
-function removeNthElement(arr, n) {
-  let newArr = [];
-  arr.forEach(function(i) {
-    newArr.push(i)
-  })
-  newArr.splice(n, 1)
-  return newArr;
-}
-removeNthElement([1, 2, 3, 4, 5], 3)
+// function removeNthElement(arr, n) {
+//   let newArr = [];
+//   arr.forEach(function(i) {
+//     newArr.push(i)
+//   })
+//   newArr.splice(n, 1)
+//   return newArr;
+// }
+// removeNthElement([1, 2, 3, 4, 5], 3)
+function withoutLast(arr) {
+  let arr1 = [];
+   arr1 = arr.slice(0, -1); 
+   return arr1;
+ }
+ withoutLast([1, 2, 3, 4, 5])
+ 
