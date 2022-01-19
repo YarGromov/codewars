@@ -691,30 +691,28 @@
 //   return (arr.slice(0, 1))
 // } else if (arr.length == 0) {
 //   return arr
-// }  
+// }
 // }
 // first(['a', '2', 'c', 'd', 'e'])
 // function mergeArrays(arr1, arr2) {
 
 //   let arr = arr1.slice();
 //   let arr3 = [];
-  
+
 //   for (let i = 0; i < arr2.length; i++) {
 //     arr.push(arr2[i])
 //   }
 //   let sorti = (a, b) => a -b;
 //   arr.sort(sorti)
-  
+
 //   for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] !== arr[i + 1]) {
 //       arr3.push(arr[i])
 //     }
 //   }
-  
-    
-    
+
 //   return arr3
-  
+
 //   }
 //   mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12])
 // function sum (numbers) {
@@ -738,7 +736,7 @@
 // removeNthElement([1, 2, 3, 4, 5], 3)
 // function withoutLast(arr) {
 //   let arr1 = [];
-//    arr1 = arr.slice(0, -1); 
+//    arr1 = arr.slice(0, -1);
 //    return arr1;
 //  }
 //  withoutLast([1, 2, 3, 4, 5])
@@ -746,25 +744,29 @@
 //   return (String.fromCodePoint(c))
 //   }
 //   getChar(56)
-function getGrade (s1, s2, s3) {
-  let result = "";
-  let score = ((s1 + s2 + s3) / 3);
-    
-    if (90 <= score && score <= 100 ) {
-      result = 	"A";
-    } else if (80 <= score && score  < 90) {
-      result = "B";
-    } else if (70 <= score && score < 80) {
-      result = "C";
-    } else if (60 <= score && score < 70) {
-      result = "D";
-    } else if (0 <= score && score < 60) {
-      result = "F";
-    }
-    
-  
-  
-    return result;
-  }
-  getGrade(80,90,100)
+// function getGrade (s1, s2, s3) {
+//   let result = "";
+//   let score = ((s1 + s2 + s3) / 3);
 
+//     if (90 <= score && score <= 100 ) {
+//       result = 	"A";
+//     } else if (80 <= score && score  < 90) {
+//       result = "B";
+//     } else if (70 <= score && score < 80) {
+//       result = "C";
+//     } else if (60 <= score && score < 70) {
+//       result = "D";
+//     } else if (0 <= score && score < 60) {
+//       result = "F";
+//     }
+
+//     return result;
+//   }
+//   getGrade(80,90,100)
+function apple(x){
+  if((x * x) > 1000) {
+    return  "It's hotter than the sun!!"
+  } else  return  'Help yourself to a honeycomb Yorkie for the glovebox.'
+  
+  }
+  apple('5')
