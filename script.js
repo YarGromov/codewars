@@ -763,10 +763,20 @@
 //     return result;
 //   }
 //   getGrade(80,90,100)
-function apple(x){
-  if((x * x) > 1000) {
-    return  "It's hotter than the sun!!"
-  } else  return  'Help yourself to a honeycomb Yorkie for the glovebox.'
+// function apple(x){
+//   if((x * x) > 1000) {
+//     return  "It's hotter than the sun!!"
+//   } else  return  'Help yourself to a honeycomb Yorkie for the glovebox.'
   
-  }
-  apple('5')
+//   }
+//   apple('5')
+function generateRange(min, max, step){
+  let result = [];
+
+ for (let i = min; i <= max; i = i + step) {
+   result.push(i)
+ }
+  
+  return result
+}
+generateRange(2, 10, 2)
