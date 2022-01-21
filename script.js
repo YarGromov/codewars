@@ -784,12 +784,24 @@
 //   return str.split(' ').reverse().join(' ')
 //  }
 //  nameShuffler('john McClane')
-function mouthSize(animal) {
+// function mouthSize(animal) {
   
-  if (animal == 'alligator' || animal == "ALLIGATOR") {
-    return 'small'
-  } 
-    return 'wide'
+//   if (animal == 'alligator' || animal == "ALLIGATOR") {
+//     return 'small'
+//   } 
+//     return 'wide'
+//   }
+//   mouthSize("ALLIGATOR")
+
+var replaceDots = function(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== '.') {
+      result += str[i]
+    } else {
+      result += '-'
+    }
   }
-  mouthSize("ALLIGATOR")
-.
+    return result;
+  }
+  replaceDots("one.two.three")
