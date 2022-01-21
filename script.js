@@ -780,7 +780,16 @@
 //   return result
 // }
 // generateRange(2, 10, 2)
-function nameShuffler(str){
-  return str.split(' ').reverse().join(' ')
- }
- nameShuffler('john McClane')
+// function nameShuffler(str){
+//   return str.split(' ').reverse().join(' ')
+//  }
+//  nameShuffler('john McClane')
+function mouthSize(animal) {
+  
+  if (animal == 'alligator' || animal == "ALLIGATOR") {
+    return 'small'
+  } 
+    return 'wide'
+  }
+  mouthSize("ALLIGATOR")
+.
