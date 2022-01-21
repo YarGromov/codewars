@@ -793,15 +793,32 @@
 //   }
 //   mouthSize("ALLIGATOR")
 
-var replaceDots = function(str) {
-  let result = '';
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== '.') {
-      result += str[i]
-    } else {
-      result += '-'
-    }
+// var replaceDots = function(str) {
+//   let result = '';
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== '.') {
+//       result += str[i]
+//     } else {
+//       result += '-'
+//     }
+//   }
+//     return result;
+//   }
+//   replaceDots("one.two.three")
+const flip=(d, a)=>{
+
+  function sortiR(a, b) {
+    return a - b
   }
-    return result;
+  function sortiL(a, b) {
+    return b -a
   }
-  replaceDots("one.two.three")
+  
+  if (d == 'L') {
+    return a.sort(sortiL)
+  } else if (d == 'R') {
+    return a.sort(sortiR)
+  }
+  
+  }
+  flip('R', [1, 4, 5, 3, 5])
