@@ -785,10 +785,10 @@
 //  }
 //  nameShuffler('john McClane')
 // function mouthSize(animal) {
-  
+
 //   if (animal == 'alligator' || animal == "ALLIGATOR") {
 //     return 'small'
-//   } 
+//   }
 //     return 'wide'
 //   }
 //   mouthSize("ALLIGATOR")
@@ -805,20 +805,47 @@
 //     return result;
 //   }
 //   replaceDots("one.two.three")
-const flip=(d, a)=>{
+// const flip = (d, a) => {
+//   function sortiR(a, b) {
+//     return a - b;
+//   }
+//   function sortiL(a, b) {
+//     return b - a;
+//   }
 
-  function sortiR(a, b) {
-    return a - b
-  }
-  function sortiL(a, b) {
-    return b -a
+//   if (d == "L") {
+//     return a.sort(sortiL);
+//   } else if (d == "R") {
+//     return a.sort(sortiR);
+//   }
+// };
+// flip("R", [1, 4, 5, 3, 5]);
+var humanYearsCatYearsDogYears = function(humanYears) {
+  let result = [];
+  result.push(humanYears);
+  let cat = 0;
+  
+  let dog = 0;
+  
+  
+  if (humanYears == 1) {
+    cat = 15
+  } else if (humanYears == 2) {
+    cat = 24
+  } else if (humanYears > 2) {
+    cat = 24 + ((humanYears - 2) * 4)
   }
   
-  if (d == 'L') {
-    return a.sort(sortiL)
-  } else if (d == 'R') {
-    return a.sort(sortiR)
+  if (humanYears == 1) {
+    dog = 15
+  } else if (humanYears == 2) {
+    dog = 24
+  } else if (humanYears > 2) {
+    dog = 24 + ((humanYears - 2) * 5)
   }
   
+  result.push(cat);
+    result.push(dog);
+    return result;
   }
-  flip('R', [1, 4, 5, 3, 5])
+  humanYearsCatYearsDogYears(10)
