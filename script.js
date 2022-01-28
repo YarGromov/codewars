@@ -820,32 +820,40 @@
 //   }
 // };
 // flip("R", [1, 4, 5, 3, 5]);
-var humanYearsCatYearsDogYears = function(humanYears) {
-  let result = [];
-  result.push(humanYears);
-  let cat = 0;
-  
-  let dog = 0;
-  
-  
-  if (humanYears == 1) {
-    cat = 15
-  } else if (humanYears == 2) {
-    cat = 24
-  } else if (humanYears > 2) {
-    cat = 24 + ((humanYears - 2) * 4)
+// var humanYearsCatYearsDogYears = function(humanYears) {
+//   let result = [];
+//   result.push(humanYears);
+//   let cat = 0;
+
+//   let dog = 0;
+
+//   if (humanYears == 1) {
+//     cat = 15
+//   } else if (humanYears == 2) {
+//     cat = 24
+//   } else if (humanYears > 2) {
+//     cat = 24 + ((humanYears - 2) * 4)
+//   }
+
+//   if (humanYears == 1) {
+//     dog = 15
+//   } else if (humanYears == 2) {
+//     dog = 24
+//   } else if (humanYears > 2) {
+//     dog = 24 + ((humanYears - 2) * 5)
+//   }
+
+//   result.push(cat);
+//     result.push(dog);
+//     return result;
+//   }
+//   humanYearsCatYearsDogYears(10)
+
+function checkAlive(health) {
+  if (health > 0) {
+    return true
+  } else {
+    return false
   }
-  
-  if (humanYears == 1) {
-    dog = 15
-  } else if (humanYears == 2) {
-    dog = 24
-  } else if (humanYears > 2) {
-    dog = 24 + ((humanYears - 2) * 5)
-  }
-  
-  result.push(cat);
-    result.push(dog);
-    return result;
-  }
-  humanYearsCatYearsDogYears(10)
+};
+checkAlive(5)
