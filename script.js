@@ -867,13 +867,27 @@
 //   return result
 // }
 // console.log(howManyLightsabersDoYouOwn("Zach"))
-function preFizz(n) {
-  let result = [];
-  for (let i = 1; i <= n; i++) {
-      result.push(i)
-    }
-  return result
+// function preFizz(n) {
+//   let result = [];
+//   for (let i = 1; i <= n; i++) {
+//       result.push(i)
+//     }
+//   return result
+//   }
+//   console.log(preFizz(5))
+function converter (mpg) {
+  
+  let oneImpGallon_litr =  4.54609188;
+  let oneMile_km = 1.609344;
+  
+  let km = mpg * oneMile_km;
+  let litersKm = km / oneImpGallon_litr;
+  
+  let result = litersKm.toFixed(2)
+    
+  
+  
+  return +result;
   }
-  console.log(preFizz(5))
-
+  console.log(converter(20))
 
