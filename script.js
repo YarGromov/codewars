@@ -849,11 +849,22 @@
 //   }
 //   humanYearsCatYearsDogYears(10)
 
-function checkAlive(health) {
-  if (health > 0) {
-    return true
-  } else {
-    return false
+// function checkAlive(health) {
+//   if (health > 0) {
+//     return true
+//   } else {
+//     return false
+//   }
+// };
+// checkAlive(5)
+function howManyLightsabersDoYouOwn(name) {
+  let result = 0;
+  if (name == "Zach") {
+    result = 18;
+  } else if (name != "Zach"){
+    result = 0;
   }
-};
-checkAlive(5)
+  return result
+}
+console.log(howManyLightsabersDoYouOwn("Zach"))
+
