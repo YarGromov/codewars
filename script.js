@@ -874,20 +874,23 @@
 //     }
 //   return result
 //   }
-//   console.log(preFizz(5))
-function converter (mpg) {
+// //   console.log(preFizz(5))
+// function converter (mpg) {
   
-  let oneImpGallon_litr =  4.54609188;
-  let oneMile_km = 1.609344;
+//   let oneImpGallon_litr =  4.54609188;
+//   let oneMile_km = 1.609344;
   
-  let km = mpg * oneMile_km;
-  let litersKm = km / oneImpGallon_litr;
+//   let km = mpg * oneMile_km;
+//   let litersKm = km / oneImpGallon_litr;
   
-  let result = litersKm.toFixed(2)
+//   let result = litersKm.toFixed(2)
     
   
   
-  return +result;
+//   return +result;
+//   }
+//   console.log(converter(20))
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`;
   }
-  console.log(converter(20))
-
+  console.log(TempleStrings("Animals","Good"))
