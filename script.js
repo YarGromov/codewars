@@ -857,14 +857,23 @@
 //   }
 // };
 // checkAlive(5)
-function howManyLightsabersDoYouOwn(name) {
-  let result = 0;
-  if (name == "Zach") {
-    result = 18;
-  } else if (name != "Zach"){
-    result = 0;
-  }
+// function howManyLightsabersDoYouOwn(name) {
+//   let result = 0;
+//   if (name == "Zach") {
+//     result = 18;
+//   } else if (name != "Zach"){
+//     result = 0;
+//   }
+//   return result
+// }
+// console.log(howManyLightsabersDoYouOwn("Zach"))
+function preFizz(n) {
+  let result = [];
+  for (let i = 1; i <= n; i++) {
+      result.push(i)
+    }
   return result
-}
-console.log(howManyLightsabersDoYouOwn("Zach"))
+  }
+  console.log(preFizz(5))
+
 
