@@ -890,7 +890,15 @@
 //   return +result;
 //   }
 //   console.log(converter(20))
-var TempleStrings = function(obj, feature) {
-  return `${obj} are ${feature}`;
+// var TempleStrings = function(obj, feature) {
+//   return `${obj} are ${feature}`;
+//   }
+//   console.log(TempleStrings("Animals","Good"))
+function correctTail(body, tail) {
+  if (body[body.length -1] == tail) {
+    return true
+  } else {
+    return false
   }
-  console.log(TempleStrings("Animals","Good"))
+};
+console.log(correctTail("Meerkat", "t"))
