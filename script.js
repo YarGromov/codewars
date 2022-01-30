@@ -894,11 +894,24 @@
 //   return `${obj} are ${feature}`;
 //   }
 //   console.log(TempleStrings("Animals","Good"))
-function correctTail(body, tail) {
-  if (body[body.length -1] == tail) {
-    return true
-  } else {
-    return false
+// function correctTail(body, tail) {
+//   if (body[body.length -1] == tail) {
+//     return true
+//   } else {
+//     return false
+//   }
+// };
+// console.log(correctTail("Meerkat", "t"))
+function stringy(size) {
+  let result = [];
+    
+  for (let i = 0; i < size; i++) {
+    if (i % 2 == 0) {
+      result.push('1');
+    } else if (i % 2 != 0) {
+      result.push('0')
+    }
   }
-};
-console.log(correctTail("Meerkat", "t"))
+  return result.join('');
+  }
+  console.log(stringy(8))
