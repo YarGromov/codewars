@@ -902,16 +902,21 @@
 //   }
 // };
 // console.log(correctTail("Meerkat", "t"))
-function stringy(size) {
-  let result = [];
+// function stringy(size) {
+//   let result = [];
     
-  for (let i = 0; i < size; i++) {
-    if (i % 2 == 0) {
-      result.push('1');
-    } else if (i % 2 != 0) {
-      result.push('0')
-    }
-  }
-  return result.join('');
-  }
-  console.log(stringy(8))
+//   for (let i = 0; i < size; i++) {
+//     if (i % 2 == 0) {
+//       result.push('1');
+//     } else if (i % 2 != 0) {
+//       result.push('0')
+//     }
+//   }
+//   return result.join('');
+//   }
+//   console.log(stringy(8))
+
+function odds(values){
+  // arrow it
+  return values.filter((item) => item % 2 !== 0);
+}
