@@ -921,13 +921,29 @@
 //   return values.filter((item) => item % 2 !== 0);
 // }
 
-function findNeedle(haystack) {
-  let result;
-    for (let i = 0; i < haystack.length; i++) {
-      if(haystack[i] == 'needle') {
-        result = `found the needle at position ${i}`;
-      }
-    }
-    return result;
-  }
-  console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]));
+// function findNeedle(haystack) {
+//   let result;
+//     for (let i = 0; i < haystack.length; i++) {
+//       if(haystack[i] == 'needle') {
+//         result = `found the needle at position ${i}`;
+//       }
+//     }
+//     return result;
+//   }
+//   console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]));
+function howManyDalmatians(number) {
+  let respond = '';
+    let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
+
+  if (number <= 10) {
+    respond = dogs[0];
+  } else if (number <= 50) {
+     respond = dogs[1];
+  } else if (number == 101) {
+    respond = dogs[3];
+  } else {
+    respond = dogs[2];
+  } 
+return respond
+}
+console.log(howManyDalmatians(101))
