@@ -931,19 +931,32 @@
 //     return result;
 //   }
 //   console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]));
-function howManyDalmatians(number) {
-  let respond = '';
-    let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
+// function howManyDalmatians(number) {
+//   let respond = '';
+//     let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIONS!!!"];
 
-  if (number <= 10) {
-    respond = dogs[0];
-  } else if (number <= 50) {
-     respond = dogs[1];
-  } else if (number == 101) {
-    respond = dogs[3];
-  } else {
-    respond = dogs[2];
-  } 
-return respond
-}
-console.log(howManyDalmatians(101))
+//   if (number <= 10) {
+//     respond = dogs[0];
+//   } else if (number <= 50) {
+//      respond = dogs[1];
+//   } else if (number == 101) {
+//     respond = dogs[3];
+//   } else {
+//     respond = dogs[2];
+//   } 
+// return respond
+// }
+// console.log(howManyDalmatians(101))
+function uefaEuro2016(teams, scores){
+  let result = '';
+    if (scores[0] > scores[1]) {
+      result = `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
+    } else if (scores[0] < scores[1]) {
+       result = `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`;
+    } else {
+      result = `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
+    }
+    
+    return result;
+  }
+  console.log(uefaEuro2016(['Germany', 'Ukraine'], [3, 3]))
