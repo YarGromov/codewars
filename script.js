@@ -947,16 +947,23 @@
 // return respond
 // }
 // console.log(howManyDalmatians(101))
-function uefaEuro2016(teams, scores){
-  let result = '';
-    if (scores[0] > scores[1]) {
-      result = `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
-    } else if (scores[0] < scores[1]) {
-       result = `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`;
-    } else {
-      result = `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
-    }
+// function uefaEuro2016(teams, scores){
+//   let result = '';
+//     if (scores[0] > scores[1]) {
+//       result = `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`;
+//     } else if (scores[0] < scores[1]) {
+//        result = `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`;
+//     } else {
+//       result = `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
+//     }
     
-    return result;
+//     return result;
+//   }
+//   console.log(uefaEuro2016(['Germany', 'Ukraine'], [3, 3]))
+function grow(x){
+  let result = x.reduce((sum, current) => sum * current);
+  return result
   }
-  console.log(uefaEuro2016(['Germany', 'Ukraine'], [3, 3]))
+  console.log(grow([1, 2, 3]))
+  
+  
