@@ -916,7 +916,18 @@
 //   }
 //   console.log(stringy(8))
 
-function odds(values){
-  // arrow it
-  return values.filter((item) => item % 2 !== 0);
-}
+// function odds(values){
+//   // arrow it
+//   return values.filter((item) => item % 2 !== 0);
+// }
+
+function findNeedle(haystack) {
+  let result;
+    for (let i = 0; i < haystack.length; i++) {
+      if(haystack[i] == 'needle') {
+        result = `found the needle at position ${i}`;
+      }
+    }
+    return result;
+  }
+  console.log(findNeedle(['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false]));
