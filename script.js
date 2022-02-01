@@ -960,10 +960,19 @@
 //     return result;
 //   }
 //   console.log(uefaEuro2016(['Germany', 'Ukraine'], [3, 3]))
-function grow(x){
-  let result = x.reduce((sum, current) => sum * current);
-  return result
+// function grow(x){
+//   let result = x.reduce((sum, current) => sum * current);
+//   return result
+//   }
+//   console.log(grow([1, 2, 3]))
+  
+function bonusTime(salary, bonus) {
+  let result = '';
+    if (bonus == true) {
+      result = `£${salary * 10}`;
+    } else {
+      result = `£${salary}`;
+    }
+    return result;
   }
-  console.log(grow([1, 2, 3]))
-  
-  
+  console.log(bonusTime(25, true))
