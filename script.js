@@ -966,13 +966,33 @@
 //   }
 //   console.log(grow([1, 2, 3]))
   
-function bonusTime(salary, bonus) {
-  let result = '';
-    if (bonus == true) {
-      result = `£${salary * 10}`;
-    } else {
-      result = `£${salary}`;
+// function bonusTime(salary, bonus) {
+//   let result = '';
+//     if (bonus == true) {
+//       result = `£${salary * 10}`;
+//     } else {
+//       result = `£${salary}`;
+//     }
+//     return result;
+//   }
+//   console.log(bonusTime(25, true))
+function points(games) {
+  let result = 0;
+let newArrs = [];
+for (let i = 0; i < games.length; i++) {
+    newArrs.push(games[i].split(','))
     }
-    return result;
-  }
-  console.log(bonusTime(25, true))
+
+for (let j = 0; j < newArrs.length; j++) {
+  if (newArrs[j][0][0] > newArrs[j][0][2]) {
+  result += 3
+} else if (newArrs[j][0][0] == newArrs[j][0][2]) {
+  result += 1
+} else {
+  result += 0
+}
+}
+  
+  return newArrs;
+}
+console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]))
