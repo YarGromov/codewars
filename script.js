@@ -997,13 +997,28 @@
 // }
 // console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]))
 
+// function remove (string) {
+//   let result = '';
+//   if (string[string.length - 1] == '!') {
+//      result = string.slice(0, -1)
+//    } else {
+//     result = string;
+//    }
+//   return result;
+//   }
+//   console.log(remove("Hi!!!, Hi"))
 function remove (string) {
   let result = '';
-  if (string[string.length - 1] == '!') {
-     result = string.slice(0, -1)
-   } else {
-    result = string;
-   }
-  return result;
+  
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] == '!') {
+        continue;
+      } else {
+        result += string[i]
+      }
+    }
+  
+    return result  + '!';  
   }
-  console.log(remove("Hi!!!, Hi"))
+  console.log(remove ("Hi! Hi! Hi Hi!"));
+  
