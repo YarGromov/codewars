@@ -876,17 +876,15 @@
 //   }
 // //   console.log(preFizz(5))
 // function converter (mpg) {
-  
+
 //   let oneImpGallon_litr =  4.54609188;
 //   let oneMile_km = 1.609344;
-  
+
 //   let km = mpg * oneMile_km;
 //   let litersKm = km / oneImpGallon_litr;
-  
+
 //   let result = litersKm.toFixed(2)
-    
-  
-  
+
 //   return +result;
 //   }
 //   console.log(converter(20))
@@ -904,7 +902,7 @@
 // console.log(correctTail("Meerkat", "t"))
 // function stringy(size) {
 //   let result = [];
-    
+
 //   for (let i = 0; i < size; i++) {
 //     if (i % 2 == 0) {
 //       result.push('1');
@@ -943,7 +941,7 @@
 //     respond = dogs[3];
 //   } else {
 //     respond = dogs[2];
-//   } 
+//   }
 // return respond
 // }
 // console.log(howManyDalmatians(101))
@@ -956,7 +954,7 @@
 //     } else {
 //       result = `At match ${teams[0]} - ${teams[1]}, teams played draw.`;
 //     }
-    
+
 //     return result;
 //   }
 //   console.log(uefaEuro2016(['Germany', 'Ukraine'], [3, 3]))
@@ -965,7 +963,7 @@
 //   return result
 //   }
 //   console.log(grow([1, 2, 3]))
-  
+
 // function bonusTime(salary, bonus) {
 //   let result = '';
 //     if (bonus == true) {
@@ -992,7 +990,7 @@
 //   result += 0
 // }
 // }
-  
+
 //   return newArrs;
 // }
 // console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]))
@@ -1007,18 +1005,24 @@
 //   return result;
 //   }
 //   console.log(remove("Hi!!!, Hi"))
-function remove (string) {
-  let result = '';
-  
-    for (let i = 0; i < string.length; i++) {
-      if (string[i] == '!') {
-        continue;
-      } else {
-        result += string[i]
-      }
-    }
-  
-    return result  + '!';  
-  }
-  console.log(remove ("Hi! Hi! Hi Hi!"));
-  
+// function remove (string) {
+//   let result = '';
+
+//     for (let i = 0; i < string.length; i++) {
+//       if (string[i] == '!') {
+//         continue;
+//       } else {
+//       result += string[i]
+//     }
+//   }
+
+//   return result  + '!';
+// }
+// console.log(remove ("Hi! Hi! Hi Hi!"));
+
+function removeEveryOther(arr) {
+  let result = arr.filter((el, index) => {
+    return !(index % 2);
+  });
+  return result;
+}
