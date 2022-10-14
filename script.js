@@ -1020,9 +1020,14 @@
 // }
 // console.log(remove ("Hi! Hi! Hi Hi!"));
 
-function removeEveryOther(arr) {
-  let result = arr.filter((el, index) => {
-    return !(index % 2);
-  });
-  return result;
+// function removeEveryOther(arr) {
+//   let result = arr.filter((el, index) => {
+//     return !(index % 2);
+//   });
+//   return result;
+// }
+
+function addCodewars(websites)  {
+  websites.push('codewars')
+return websites
 }
