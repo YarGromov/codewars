@@ -1050,7 +1050,19 @@
 //   return newArray;
 // }
 
-function ifChuckSaysSo(){
-return 2 > 3
-}
-console.log(ifChuckSaysSo())
+// function ifChuckSaysSo(){
+// return 2 > 3
+// }
+// console.log(ifChuckSaysSo())
+
+
+//----- Count the Monkeys!
+
+function monkeyCount(n) {
+  let arr = [];
+  for(let i = 1; i <= n; i++) {
+     arr.push(i)
+  }
+  return arr;
+  }
+console.log(monkeyCount(3));
