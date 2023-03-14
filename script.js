@@ -1027,7 +1027,30 @@
 //   return result;
 // }
 
-function addCodewars(websites)  {
-  websites.push('codewars')
-return websites
+// function addCodewars(websites)  {
+//   websites.push('codewars')
+// return websites
+// }
+// function isPalindrome(x) {
+//   let result = '';
+//   for (let i = 0; i < x.length; i++){
+//     result += x[i];
+//   }
+//   return result === x;
+// }
+// console.log(isPalindrome('hello'))
+
+// function createArray(number){
+//   var newArray = [];
+  
+//   for(var counter = 1; counter <= number;counter++){
+//     newArray.push(counter);
+//   }
+  
+//   return newArray;
+// }
+
+function ifChuckSaysSo(){
+return 2 > 3
 }
+console.log(ifChuckSaysSo())
